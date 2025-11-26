@@ -73,12 +73,15 @@ let num6=2;
         }
 
         // Q11. IF Statement – Payment Status
-        let paymentStatus = 'paid'; // Tusaale ahaan, status waa 'paid'
-        if (paymentStatus === 'paid') {
-            console.log('Payment successful');
-        } else {
-            console.log('Payment pending');
-        }
+        if (status === "completed") {
+    console.log("Your payment has been received");
+} else if (status === "pending") {
+    console.log("Payment is processing… please wait");
+} else if (status === "failed") {
+    console.log("Payment failed. Try again");
+} else {
+    console.log("Unknown payment status");
+}
 
         // Q12 . Comparison Operators
         let a = 30;
